@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "parcel ./public/index.html",
+    "dev": "parcel public/index.html",
     "sass": "sass src/assets/css/scss:src/assets/css --watch --no-source-map",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
@@ -29,9 +29,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 2 Chrome versions"
     ],
     "development": [
       "last 1 chrome version",
@@ -45,6 +43,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@parcel/babel-preset-env": "^2.4.1",
+    "@parcel/transformer-svg-react": "^2.4.1",
     "autoprefixer": "^10.4.4",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",

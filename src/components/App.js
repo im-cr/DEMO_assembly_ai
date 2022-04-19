@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import NotFound from "./NotFound";
+import NotFound from "./NotFound.js";
 import "../assets/css/app.css";
 
 const App = () => {
@@ -26,12 +26,12 @@ const App = () => {
     let a = String(one.toLowerCase());
     let b = String(two.toLowerCase());
 
-    if (a === b && a != "" && b != "") {
+    if (a === b && a !== "" && b !== "") {
       SetInputEval(true);
       navigate("/success", {
         state: { show: true, text: "Equal", icon: "🎉" },
       });
-    } else if (a != b) {
+    } else if (a !== b) {
       SetInputEval(false);
       navigate("/failure", {
         state: { show: true, text: "Not Equal", icon: "💤" },
