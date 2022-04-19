@@ -1,0 +1,23 @@
+.btn {
+  border: none;
+  outline: none;
+  &--submit,
+  &--link {
+    min-width: 366px;
+    height: 51px;
+    font-size: 15px;
+    line-height: 19.36px;
+    border-radius: 8px;
+    background: $blue-900;
+    color: $txt-wht;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: $blue-400;
+    }
+  }
+  &:disabled {
+    background: $g-500;
+  }
+}
